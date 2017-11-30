@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.elisoft.calculadora.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:textSize="35sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMA"
+            android:id="@+id/bt_suma"
+            android:background="@color/colorSuma"
+            android:textColor="#fff"
+            android:layout_margin="10sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESTA"
+            android:id="@+id/bt_resta"
+            android:background="@color/colorResta"
+            android:textColor="#fff"
+            android:layout_margin="10sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOLA. QUE TAL!"
+            android:id="@+id/bt_mensaje"
+            android:layout_margin="10sp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

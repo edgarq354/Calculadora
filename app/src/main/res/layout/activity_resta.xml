@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elisoft.calculadora.Resta">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="↓  RESTA  ↓"
+        android:textColor="@color/colorResta"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15sp"
+        android:layout_gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nro. 1:"
+            android:textColor="@color/colorResta"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorResta"
+            android:textSize="25sp"
+            android:id="@+id/et_numero1"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nro. 2:"
+            android:textColor="@color/colorResta"
+            android:textSize="15sp"
+            android:layout_marginTop="25sp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorResta"
+            android:textSize="25sp"
+            android:id="@+id/et_numero2"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado . . . . ."
+            android:textColor="@color/colorResta"
+            android:textSize="25sp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            android:id="@+id/tv_resultado"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resolver"
+            android:textColor="#fff"
+            android:background="@color/colorResta"
+            android:id="@+id/bt_resolver"
+            />
+
+    </LinearLayout>
+</FrameLayout>
+
